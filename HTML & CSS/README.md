@@ -42,9 +42,3 @@
 - **Στόχος:** Σύνθετη φόρμα εγγραφής με επικύρωση.  
 - **Τεχνολογίες:** HTML5 Form Elements, Constraint Validation API, JavaScript.  
 - **Λειτουργίες:** Autocomplete, έλεγχος password, προσαρμοσμένα μηνύματα λάθους.
-
----
-
-## Επαλήθευση Κώδικα
-- **HTML:** [W3C Validator](https://validator.w3.org/)  
-- **CSS:** [Jigsaw Validator](https://jigsaw.w3.org/css-validator/)  
