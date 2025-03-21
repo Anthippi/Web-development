@@ -1,4 +1,4 @@
-# 5 Stages of Building an Ads Website: HTML5, CSS, JavaScript & Responsive Design
+# Stages of Building an Ads Website: HTML5, CSS, JavaScript & Responsive Design
 
 ---
 ### Role of `INDEX.html`
