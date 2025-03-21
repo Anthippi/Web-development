@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <title> Home Rentals </title>
+    <link rel="stylesheet" type="text/css" href="styling.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "icon" href = "../Photos/logo.png" type = "image/x-icon"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body class="rentals">
+    <header class="menu">
+        <a href="index.html"> <img class="logo" src= "../Photos/logo.png" alt="logo"></a>
+        <nav class="big-wrapper">
+            <div class="big-sticker-wrapper">
+                <div class="sticker-wrapper">
+                    <aside class="sticker yellow">
+                                <p> <a href="index.html">Κεντρική Σελίδα</a> </p>
+                        <span class="fold"></span>
+                    </aside>
+                </div>
+                <div class="sticker-wrapper">
+                    <aside class="sticker yellow">
+                                <p> <a href="categories.html">Κατηγορίες</a> </p>
+                        <span class="fold"></span>
+                    </aside>
+                </div>
+                <div class="sticker-wrapper">
+                    <aside class="sticker yellow">
+                                <p> <a href="about-us.html">Ποιοι είμαστε</a> </p>
+                        <span class="fold"></span>
+                    </aside>
+                </div>
+                <div class="sticker-wrapper">
+                    <aside class="sticker yellow">
+                                <p> <a href="contact-us.html">Επικοινωνία</a> </p>
+                        <span class="fold"></span>
+                    </aside>
+                </div>
+                <div class="sticker-wrapper">
+                    <aside class="sticker yellow">
+                            <div class="list-choice">
+                                <div class="list-choice-title"><span class="material-symbols-outlined">language</span></div>
+                                    <div class="list-choice-objects">
+                                        <label> <input type="radio" name = "language"><span>Ελληνικά </span></label>
+                                        <label> <input type="radio" name = "language"><span>English</span></label>
+                                    </div>
+                            </div>
+                        <span class="fold"></span>
+                    </aside>
+                </div>
+                <div class="sticker-wrapper">
+                    <aside class="sticker yellow">
+                                <p> 
+                                    <a href="form.html"><span class="material-symbols-outlined">person</span></a>
+                                </p>
+                        <span class="fold"></span>
+                    </aside>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <aside class="rentals_aside">
+        <div class="img-tape">
+            <div class="paper-line-filter">
+                <div class="paper-content">  
+
+                    <div class="filtra_efarmogh">
+                        <h2>Φίλτρα</h2>
+                        <div class="item">
+                            <div class="highlight"></div>
+                            <input type="submit" class="btn" value="Εφαρμογή Φίλτρων">
+                        </div>
+                    </div>
+
+                    <div class="filter-content">
+                        <section class="list-choice-filter">
+                            <div class="list-choice-title-filter">Περιοχή:</div>
+                            <div class="list-choice-objects-filter">
+                                <label><input type="radio" name="location"> <span>Αθήνα</span></label>
+                                <label><input type="radio" name="location"> <span>Θεσσαλονίκη</span></label>
+                                <label><input type="radio" name="location"> <span>Πάτρα</span></label>
+                            </div>
+                        </section>
+            
+                        <section class="list-choice-filter">
+                            <div class="list-choice-title-filter">Έτος κατασκευής:</div>
+                            <div class="list-choice-objects-filter">
+                                <label><input type="radio" name="year"> <span>1990</span></label>
+                                <label><input type="radio" name="year"> <span>2000</span></label>
+                                <label><input type="radio" name="year"> <span>2010</span></label>
+                                <label><input type="radio" name="year"> <span>2020</span></label>
+                            </div>
+                        </section>
+            
+                        <section class="list-choice-filter">
+                            <div class="list-choice-title-filter">Είδος σπιτιού:</div>
+                            <div class="list-choice-objects-filter">
+                                <label><input type="radio" name="biuldingtype"> <span>Διαμέρισμα</span></label>
+                                <label><input type="radio" name="biuldingtype"> <span>Μονοκατοικία</span></label>
+                                <label><input type="radio" name="biuldingtype"> <span>Οροφοδιαμέρισμα</span></label>
+                                <label><input type="radio" name="biuldingtype"> <span>Ρετιρέ</span></label>
+                            </div>
+                        </section>
+            
+            
+                        <section>
+                           <h3>Εύρος τιμών:</h3>
+                            
+                            <div class="range_container">
+                                <div class="sliders_control">
+                                    <input id="fromSlider" type="range" value="10" min="0" max="100"/>
+                                    <input id="toSlider" type="range" value="40" min="0" max="100"/>
+                                </div>
+                                <div class="form_control">
+                                    <div class="form_control_container">
+                                        <div class="form_control_container__time">Min</div>
+                                        <input class="form_control_container__time__input" type="number" id="fromInput" value="10" min="0" max="100"/>
+                                    </div>
+                                    <div class="form_control_container">
+                                        <div class="form_control_container__time">Max</div>
+                                        <input class="form_control_container__time__input" type="number" id="toInput" value="40" min="0" max="100"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </aside>
+
+
+    <main class="rentals-main">
+    
+        <div class="selidodikths">
+            <h2>ΠΩΛΗΣΕΙΣ ΚΑΤΟΙΚΙΩΝ</h2>
+        </div>
+    
+        
+        <article class="polaroid-wrapper">
+
+            <section class="big_product">
+                <div class="move2">
+                    <div class="pin">
+                        <div class="shadow"></div>
+                        <div class="metal"></div>
+                        <div class="bottom-circle"></div>
+                    </div>
+                </div>  
+                <div class="product"> 
+                    <a href="home-rentals-1-details.html" >
+                    <div class="polaroid">
+                        <picture>
+                            <source srcset="../Photos/house2.1mini.jpg" media="(max-width:700px)">
+                            <source srcset="../Photos/house2.1.jpg">
+                            <img src="../Photos/house2.1.jpg" alt="house icon">
+                        </picture>
+                        <div class="caption">
+                            <p>Παναγιτσα Παλαιο Φαληρο</p>
+                            <p>69τ.μ. 2 Δωμάτια, 300.000€</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            </section>
+    
+            <section class="big_product">
+                <div class="move2">
+                    <div class="pin">
+                        <div class="shadow"></div>
+                        <div class="metal"></div>
+                        <div class="bottom-circle"></div>
+                    </div>
+                </div>  
+                <div class="product">
+                    <div class="polaroid">
+                        <picture>
+                            <source srcset="../Photos/house3.1_mini.jpg" media="(max-width:700px)">
+                            <source srcset="../Photos/house3.1.jpg" >
+                            <img src="../Photos/house3.1.jpg" alt="house icon">
+                        </picture>
+                        <div class="caption">
+                            <p>Τροκαντερο Παλαιο Φαληρο</p>
+                            <p> 140τ.μ. 2 Δωμάτια, 385.000€</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="big_product">
+                <div class="move2">
+                    <div class="pin">
+                        <div class="shadow"></div>
+                        <div class="metal"></div>
+                        <div class="bottom-circle"></div>
+                    </div>
+                </div>  
+                <div class="product">
+                    <div class="polaroid">
+                        <picture>
+                            <source srcset="../Photos/house4.1_mini.jpg" media="(max-width:700px)">
+                            <source srcset="../Photos/house4.1.jpg">
+                            <img src="../Photos/house4.1.jpg" alt="house icon">
+                        </picture>
+                        <div class="caption">
+                            <p>Αμπελοκηποι, 35τ.μ.</p>
+                            <p>1 Δωμάτιο, 54.000€</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="big_product">
+                <div class="move2">
+                    <div class="pin">
+                        <div class="shadow"></div>
+                        <div class="metal"></div>
+                        <div class="bottom-circle"></div>
+                    </div>
+                </div>  
+                <div class="product">
+                    <div class="polaroid">
+                        <picture>
+                            <source srcset="../Photos/house5.1_mini.jpg" media="(max-width:700px)">
+                            <source srcset="../Photos/house5.1.jpg">
+                            <img src="../Photos/house5.1.jpg" alt="house icon">
+                        </picture>
+                        <div class="caption">
+                            <p>Ανω Πετραλωνα 50τ.μ.</p>
+                            <p>1 Δωμάτιο 145.000€</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="big_product">
+                <div class="move2">
+                    <div class="pin">
+                        <div class="shadow"></div>
+                        <div class="metal"></div>
+                        <div class="bottom-circle"></div>
+                    </div>
+                </div>  
+                <div class="product">
+                    <div class="polaroid">
+                        <picture>
+                            <source srcset="../Photos/house6.1_mini.jpg" media="(max-width:700px)">
+                            <source srcset="../Photos/house6.1.jpg">
+                            <img src="../Photos/house6.1.jpg" alt="house icon">
+                        </picture>
+                        <div class="caption">
+                            <p>Κεντρο Ζωγραφου, 81τ.μ.</p>
+                            <p>1 Δωμάτιο, 85.000€</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="big_product">
+                <div class="move2">
+                    <div class="pin">
+                        <div class="shadow"></div>
+                        <div class="metal"></div>
+                        <div class="bottom-circle"></div>
+                    </div>
+                </div>  
+                <div class="product">
+                    <div class="polaroid">
+                        <picture>
+                            <source srcset="../Photos/house7.1_mini.jpg" media="(max-width:700px)">
+                            <source srcset="../Photos/house7.1.jpg">
+                            <img src="../Photos/house7.1.jpg" alt="house icon">
+                        </picture>
+                        <div class="caption">
+                            <p>Ασπροπυργος, 84τ.μ.</p>
+                            <p>2 Δωμάτια, 100.000€</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+    <footer>
+
+        <section class="logoclass">
+            <a href="index.html"> 
+                <img class="logo"  src="../Photos/logo.png" alt="logo">
+            </a>
+        </section>
+            
+    
+        <section class="app_download">
+    
+            <h4> Κατεβάστε την Εφαρμογή μας: </h4>
+    
+            <nav class="navapp">
+                <picture class="navphoto1">
+                    <source srcset="../Photos/play_store_mini.png" media="(max-width:700px)">
+                    <source srcset="../Photos/play_store.png">
+                    <img class ="store_photos" src="../Photos/play_store.png" alt="play store">
+                </picture> 
+                <br>
+                <picture>
+                    <source srcset="../Photos/app_store_mini.png" media="(max-width:700px)">
+                    <source srcset="../Photos/app_store.png">
+                    <img class ="store_photos" src="../Photos/app_store.png" alt="app store">
+                </picture> 
+            </nav>
+    
+        </section>
+    
+        <section class="socials">
+    
+            <h4> Socials: </h4>
+            
+            <nav class="navsocials">
+                <picture>
+                    <source srcset="../Photos/fb-logo-mini.png" media="(max-width:700px)">
+                    <source srcset="../Photos/fb-logo.png">
+                    <img class="app_photos" src="../Photos/fb-logo.png" alt="facebook icon">
+                </picture>
+    
+                <picture>
+                    <source srcset="../Photos/instagram-logo-mini.png" media="(max-width:700px)">
+                    <source srcset="../Photos/instagram-logo.png">
+                    <img class="app_photos" src="../Photos/instagram-logo.png" alt="instagram icon">
+                </picture>
+            </nav>
+    
+        </section>
+    
+        <section class="phone">
+    
+            <h4> Τηλέφωνο : 2017128938 </h4>
+    
+        </section>
+    
+        <section class="links">
+    
+            <h4> Χρήσιμοι Σύνδεσμοι: </h4>
+    
+            <nav class="navlinks">
+                <a class="footer_links" href="#">  Όροι χρήσης </a>
+                <br>
+                <a class="footer_links" href="#"> Cookies </a>
+            </nav>
+    
+        </section>
+    
+        <div class="copyright">
+            &copy; Copyright @2023 
+        </div>
+    </footer>
+</body>
+<script>
+function controlFromInput(fromSlider, fromInput, toInput, controlSlider) {
+    const [from, to] = getParsed(fromInput, toInput);
+    fillSlider(fromInput, toInput, '#C6C6C6', '#25daa5', controlSlider);
+    if (from > to) {
+        fromSlider.value = to;
+        fromInput.value = to;
+    } else {
+        fromSlider.value = from;
+    }
+}
+    
+function controlToInput(toSlider, fromInput, toInput, controlSlider) {
+    const [from, to] = getParsed(fromInput, toInput);
+    fillSlider(fromInput, toInput, '#C6C6C6', '#25daa5', controlSlider);
+    setToggleAccessible(toInput);
+    if (from <= to) {
+        toSlider.value = to;
+        toInput.value = to;
+    } else {
+        toInput.value = from;
+    }
+}
+
+function controlFromSlider(fromSlider, toSlider, fromInput) {
+  const [from, to] = getParsed(fromSlider, toSlider);
+  fillSlider(fromSlider, toSlider, '#C6C6C6', '#25daa5', toSlider);
+  if (from > to) {
+    fromSlider.value = to;
+    fromInput.value = to;
+  } else {
+    fromInput.value = from;
+  }
+}
+
+function controlToSlider(fromSlider, toSlider, toInput) {
+  const [from, to] = getParsed(fromSlider, toSlider);
+  fillSlider(fromSlider, toSlider, '#C6C6C6', '#25daa5', toSlider);
+  setToggleAccessible(toSlider);
+  if (from <= to) {
+    toSlider.value = to;
+    toInput.value = to;
+  } else {
+    toInput.value = from;
+    toSlider.value = from;
+  }
+}
+
+function getParsed(currentFrom, currentTo) {
+  const from = parseInt(currentFrom.value, 10);
+  const to = parseInt(currentTo.value, 10);
+  return [from, to];
+}
+
+function fillSlider(from, to, sliderColor, rangeColor, controlSlider) {
+    const rangeDistance = to.max-to.min;
+    const fromPosition = from.value - to.min;
+    const toPosition = to.value - to.min;
+    controlSlider.style.background = `linear-gradient(
+      to right,
+      ${sliderColor} 0%,
+      ${sliderColor} ${(fromPosition)/(rangeDistance)*100}%,
+      ${rangeColor} ${((fromPosition)/(rangeDistance))*100}%,
+      ${rangeColor} ${(toPosition)/(rangeDistance)*100}%, 
+      ${sliderColor} ${(toPosition)/(rangeDistance)*100}%, 
+      ${sliderColor} 100%)`;
+}
+
+function setToggleAccessible(currentTarget) {
+  const toSlider = document.querySelector('#toSlider');
+  if (Number(currentTarget.value) <= 0 ) {
+    toSlider.style.zIndex = 2;
+  } else {
+    toSlider.style.zIndex = 0;
+  }
+}
+
+const fromSlider = document.querySelector('#fromSlider');
+const toSlider = document.querySelector('#toSlider');
+const fromInput = document.querySelector('#fromInput');
+const toInput = document.querySelector('#toInput');
+fillSlider(fromSlider, toSlider, '#C6C6C6', '#25daa5', toSlider);
+setToggleAccessible(toSlider);
+
+fromSlider.oninput = () => controlFromSlider(fromSlider, toSlider, fromInput);
+toSlider.oninput = () => controlToSlider(fromSlider, toSlider, toInput);
+fromInput.oninput = () => controlFromInput(fromSlider, fromInput, toInput, toSlider);
+toInput.oninput = () => controlToInput(toSlider, fromInput, toInput, toSlider); 
+</script>
+</html>
