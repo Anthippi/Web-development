@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="el">
+
+    <head>
+        <title> Contact Us </title>
+        <link rel = "icon" href = "../Photos/logo.png" type = "image/x-icon"> 
+    </head>
+
+    <body>
+
+        <header>
+            <a href="index.html"> <img src="../Photos/logo.png" alt="logo"> </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Κεντρική Σελίδα</a></li>
+                    <li><a href="categories.html">Κατηγορίες</a></li>
+                    <li><a href="about-us.html">Ποιοι είμαστε</a></li>
+                    <li><a href="contact-us.html">Επικοινωνία</a></li>
+                </ul>
+            </nav>
+            <select id="language-selector">
+                <option value="greek">Ελληνικά</option>
+                <option value="english">English</option>
+            </select>
+        </header>
+
+        <main>
+
+            <article>
+                <form>
+                    <fieldset>
+
+                        <h2>Προσωπικά Στοιχεία</h2>
+
+                        <label for="fname">Όνομα:</label>
+                        <input type="text" id="fname" name="fname" placeholder="Συμπληρώστε το όνομά σας" size="50" autocomplete="given-name" required>
+
+                        <label for="lname">Επώνυμο:</label>
+                        <input type="text" id="lname" name="lname" placeholder="Συμπληρώστε το επώνυμο σας" size="50" autocomplete="family-name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="πχ ******@example.com" size="50"  autocomplete="email" required>
+
+                        <label for="phone">Τηλέφωνο:</label>
+                        <input type="text" id="phone" name="phone" placeholder="Συμπληρώστε το κινητό ή σταθερό σας τηλέφωνο" pattern="[0-9]{10}" autocomplete="tel" required 
+                        title="10 αριθμοί από το 0 έως το 9 σε τυχαία σειρά ">
+
+                    </fieldset>
+
+                    <fieldset>
+
+                        <h2>Στοιχεία Αγγελίας</h2>
+
+                        <label for="num">Κωδικός Αγγελίας</label><br>
+                        <input type="text" id="num" name="num" placeholder="Συμπληρώστε τον κωδικό της αγγελίας" pattern="[Α-Ω]{2} [0-9]{5}" required
+                        title="2 κεφαλαία ελληνικά γράμματα κενό και 5 ψηφία π.χ. ΑΒ 12345"><br>
+
+                        <label for="TextInput">Περιγραφή Προβλήματος</label><br>
+                        <textarea id="TextInput" 
+                        rows="7" cols="60" name="text.input"
+                        maxlength="1048576" style="height: 180px;" required > 
+                        </textarea><br>
+
+                        <input type="submit" class = "btn" value="Υποβολή">
+                        <input type="reset" class = "btn" value="Επιστροφή">
+
+                    </fieldset>
+
+                </form>
+    
+            </article>
+
+        </main>
+
+        <footer>
+
+            <section>
+                <h2> Κατεβάστε την Εφαρμογή μας </h2>
+                <nav>
+                    <img src="../Photos/play_store.png" alt="play store icon">
+                    <img src="../Photos/app_store.png" alt="app store icon">
+                </nav>
+            </section>
+
+            <section>
+                <h2> Τηλέφωνο </h2>
+                <h2> slogan </h2>
+            </section>
+
+            <a href="index.html"><img src="../Photos/logo.png " alt="logo"></a>
+
+            <section>
+                <h2> Social </h2>
+                <nav>
+                    <img src="../Photos/fb-logo.png" alt="facebook icon">
+                    <img src="../Photos/instagram-logo.png" alt="instagram icon">
+                </nav>
+            </section>
+
+            <section>
+                <h2>Χρήσιμοι Σύνδεσμοι</h2>
+                <nav>
+                    <a href="#"> Όροι χρήσης </a>
+                    <a href="#"> Cookies </a>
+                </nav>
+            </section>
+
+            &copy; Copyright Text
+
+        </footer>
+
+    </body>
+
+</html>
