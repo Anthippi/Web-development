@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Car Rentals </title>
+    <link rel="stylesheet" type="text/css" href="styling.css">
+    <link rel = "icon" href = "Photos/logo.png" type = "image/x-icon"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body class="rentals">
+    <header class="menu">
+        <a href="index.html"> <img class="logo" src= "Photos\logo.png" /></a>
+        <nav class="big-wrapper">
+            <div class="big-sticker-wrapper">
+                <div class="sticker-wrapper">
+                    <aside class="sticker yellow">
+                                <p> <a href="index.html">Κεντρική Σελίδα</a> </p>
+                        <span class="fold"></span>
+                    </aside>
+                </div>
+                <div class="sticker-wrapper">
+                    <aside class="sticker yellow">
+                                <p> <a href="categories.html">Κατηγορίες</a> </p>
+                        <span class="fold"></span>
+                    </aside>
+                </div>
+                <div class="sticker-wrapper">
+                    <aside class="sticker yellow">
+                                <p> <a href="about-us.html">Ποιοι είμαστε</a> </p>
+                        <span class="fold"></span>
+                    </aside>
+                </div>
+                <div class="sticker-wrapper">
+                    <aside class="sticker yellow">
+                                <p> <a href="contact-us.html">Επικοινωνία</a> </p>
+                        <span class="fold"></span>
+                    </aside>
+                </div>
+                <div class="sticker-wrapper">
+                    <aside class="sticker yellow">
+                            <div class="list-choice">
+                                <div class="list-choice-title"><span class="material-symbols-outlined">language</span></div>
+                                    <div class="list-choice-objects">
+                                        </label> <input type="radio" name = "language"><span>Ελληνικά </span></label>
+                                        </label> <input type="radio" name = "language"><span>English</span></label>
+                                    </div>
+                            </div>
+                        <span class="fold"></span>
+                    </aside>
+                </div>
+                <div class="sticker-wrapper">
+                    <aside class="sticker yellow">
+                                <p> 
+                                    <a href="form.html"><span class="material-symbols-outlined">person</span></a>
+                                </p>
+                        <span class="fold"></span>
+                    </aside>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <aside class="img-tape">
+        <div class="paper-line-filter">
+            <div class="paper-content">
+
+                <div class="filtra_efarmogh">
+                   <h2>Φίλτρα</h2>
+                    <div class="item">
+                        <div class="highlight"></div>
+                        <input type="submit" class="btn" value="Εφαρμογή Φίλτρων">
+                    </div> 
+                </div>
+                
+                <div class="filter-content">
+                
+                    <section class ="list-choice-filter">
+                        <div class="list-choice-title-filter">Μάρκα:</div>
+                        <div class="list-choice-objects-filter">
+                            <label><input type="radio" name="brand"> <span>Audi</span></label>
+                            <label><input type="radio" name="brand"> <span>BMW</span></label>
+                            <label><input type="radio" name="brand"> <span>Mercedes-Benz</span></label>
+                        </div>                          
+                    </section>
+    
+                    <section class ="list-choice-filter">
+                        <div class="list-choice-title-filter">Έτος κυκλοφορίας:</div>
+                        <div class="list-choice-objects-filter">
+                            <label><input type="radio" name="year"> <span>2010</span></label>
+                            <label><input type="radio" name="year"> <span>2015</span></label>
+                            <label><input type="radio" name="year"> <span>2020</span></label>
+                        </div>
+                    </section>
+                    
+                    <section class="list-choice-filter">
+                        <div class="list-choice-title-filter">Τύπος οχήματος:</div>
+                        <div class="list-choice-objects-filter">
+                            <label><input type="radio" name="type"><span>Σεντάν</span></label>
+                            <label><input type="radio" name="type"><span>SUV</span></label>
+                            <label><input type="radio" name="type"><span>Κόμπακτ</span></label>
+                        </div>
+                    </section>
+
+                    <section>
+                        <label for="price">Εύρος τιμών:</label>
+
+                        <div class="range_container">
+                            <div class="sliders_control">
+                                <input id="fromSlider" type="range" value="10" min="0" max="100"/>
+                                <input id="toSlider" type="range" value="40" min="0" max="100"/>
+                            </div>
+                            <div class="form_control">
+                                <div class="form_control_container">
+                                    <div class="form_control_container__time">Min</div>
+                                    <input class="form_control_container__time__input" type="number" id="fromInput" value="10" min="0" max="100"/>
+                                </div>
+                                <div class="form_control_container">
+                                    <div class="form_control_container__time">Max</div>
+                                    <input class="form_control_container__time__input" type="number" id="toInput" value="40" min="0" max="100"/>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </section>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <main class="rentals-main">
+        <div class="selidodikths">
+            <h2>ΑYTOKINHTA</h2>
+        </div>
+        <article class="polaroid-wrapper">
+            <section class="big_product">
+                    <div class="move2">
+                        <div class="pin">
+                            <div class="shadow"></div>
+                            <div class="metal"></div>
+                            <div class="bottom-circle"></div>
+                        </div>
+                    </div> 
+                    <div class="product">
+                        <div class="polaroid">
+                            <picture>
+                                <source srcset="Photos/car2.1_mini.jpg" media="(max-width:700px)">
+                                <source srcset="Photos/car2.1.jpg">
+                                <img src="Photos/car2.1.jpg">
+                            </picture>
+                            <div class="caption">
+                                <p>Mercedes-Benz C 180 2012,</p>
+                                <p> 101.900χλμ,1.800cc,14.500€</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="big_product">
+                    <div class="move2">
+                        <div class="pin">
+                            <div class="shadow"></div>
+                            <div class="metal"></div>
+                            <div class="bottom-circle"></div>
+                        </div>
+                    </div> 
+                    <div class="product">
+                        <div class="polaroid">
+                            <picture>
+                                <source srcset="Photos/car3.1_mini.jpg" media="(max-width:700px)">
+                                <source srcset="Photos/car3.1.jpg">
+                                <img src="Photos/car3.1.jpg">
+                            </picture>
+                            <div class="caption">
+                                <p>Peugeot 206 2002,</p>
+                                <p> 192.000χλμ,1.589cc,3.000€</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="big_product">
+                    <div class="move2">
+                        <div class="pin">
+                            <div class="shadow"></div>
+                            <div class="metal"></div>
+                            <div class="bottom-circle"></div>
+                        </div>
+                    </div> 
+                    <div class="product">
+                        <div class="polaroid">
+                            <picture>
+                                <source srcset="Photos/car4.1_mini.jpg" media="(max-width:700px)">
+                                <source srcset="Photos/car4.1.jpg">
+                                <img src="Photos/car4.1.jpg">
+                            </picture>
+                            <div class="caption">
+                                <p>Mercedes-Benz A 180 2015,</p>
+                                <p> 120.000χλμ,1.600cc,12.000€</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="big_product">
+                    <div class="move2">
+                        <div class="pin">
+                            <div class="shadow"></div>
+                            <div class="metal"></div>
+                            <div class="bottom-circle"></div>
+                        </div>
+                    </div> 
+                    <div class="product">
+                        <div class="polaroid">
+                            <picture>
+                                <source srcset="Photos/car5.1_mini.jpg" media="(max-width:700px)">
+                                <source srcset="Photos/car5.1.jpg">
+                                <img src="Photos/car5.1.jpg">
+                            </picture>
+                            <div class="caption">
+                                <p>Jeep Cherokee 2005,</p>
+                                <p> 202.300χλμ,3.700cc,6.000€</p>
+                            </div>
+                        </div>
+                    <div>
+                </section>
+
+                <section class="big_product">
+                    <div class="move2">
+                        <div class="pin">
+                            <div class="shadow"></div>
+                            <div class="metal"></div>
+                            <div class="bottom-circle"></div>
+                        </div>
+                    </div> 
+                    <div class="product">
+                        <div class="polaroid">
+                            <picture>
+                                <source srcset="Photos/car6.1_mini.jpg" media="(max-width:700px)">
+                                <source srcset="Photos/car6.1.jpg">
+                                <img src="Photos/car6.1.jpg">
+                            </picture>
+                            <div class="caption">
+                                <p>Toyota Yaris 2015 1.400cc</p>
+                                <p> 152.000χλμ, 12.000€</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="big_product">
+                    <div class="move2">
+                        <div class="pin">
+                            <div class="shadow"></div>
+                            <div class="metal"></div>
+                            <div class="bottom-circle"></div>
+                        </div>
+                    </div> 
+                    <div class="product">
+                        <div class="polaroid">
+                            <picture>
+                                <source srcset="Photos/car7.1_mini.jpg" media="(max-width:700px)">
+                                <source srcset="Photos/car7.1.jpg">
+                                <img src="Photos/car7.1.jpg">
+                            </picture>
+                            <div class="caption">
+                                <p>Ford Fiesta 2012</p>
+                                <p>150.890χλμ 1.560cc, 8.500€</p>
+                            </div>
+                        </div>
+                    </div>
+                </section> 
+
+        </article>
+    </main>
+
+
+   
+    
+    <footer>
+
+        <section class="logoclass">
+            <a href="index.html"> 
+                <img class="logo"  src="Photos/logo.png">
+            </a>
+        </section>
+            
+    
+        <section class="app_download">
+    
+            <h4> Κατεβάστε την Εφαρμογή μας: </h4>
+    
+            <nav class="navapp">
+                <picture class="navphoto1">
+                    <source srcset="Photos/play_store_mini.png" media="(max-width:700px)">
+                    <source srcset="Photos/play_store.png">
+                    <img class ="store_photos" src="Photos/play_store.png">
+                </picture> 
+                <br>
+                <picture>
+                    <source srcset="Photos/app_store_mini.png" media="(max-width:700px)">
+                    <source srcset="Photos/app_store.png">
+                    <img class ="store_photos" src="Photos/app_store.png">
+                </picture> 
+            </nav>
+    
+        </section>
+    
+        <section class="socials">
+    
+            <h4> Socials: </h4>
+            
+            <nav class="navsocials">
+                <picture>
+                    <source srcset="Photos/fb-logo-mini.png" media="(max-width:700px)">
+                    <source srcset="Photos/fb-logo.png">
+                    <img class="app_photos" src="Photos/fb-logo.png">
+                </picture>
+    
+                <picture>
+                    <source srcset="Photos/instagram-logo-mini.png" media="(max-width:700px)">
+                    <source srcset="Photos/instagram-logo.png">
+                    <img class="app_photos" src="Photos/instagram-logo.png">
+                </picture>
+            </nav>
+    
+        </section>
+    
+        <section class="phone">
+    
+            <p> Τηλέφωνο : 2017128938 </p>
+    
+        </section>
+    
+        <section class="links">
+    
+            <h4> Χρήσιμοι Σύνδεσμοι: </h4>
+    
+            <nav class="navlinks">
+                <a class="footer_links" href="###">  Όροι χρήσης </a>
+                <br>
+                <a class="footer_links" href="##"> Cookies </a>
+            </nav>
+    
+        </section>
+    
+        <div class="copyright">
+            &copy; Copyright @2023 
+        </div>
+    </footer>
+    </body>
+    </html>

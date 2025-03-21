@@ -1,0 +1,682 @@
+@font-face {
+    font-family: 'VAG-HandWritten';
+    src: url("VAG-HandWritten/VAG-HandWritten.otf");
+}
+
+body {
+    background-image: url("../Photos/white-wall-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    /*background-size: 250%;*/
+    background-attachment: fixed;
+    background-position: center center;
+
+    font-family: cursive;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    grid-area: header;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.menu::-webkit-scrollbar {
+    display: none;
+}
+
+/* Κύρια επικεφαλίδα wrapper */
+.big-wrapper {
+    padding-top: 3%;
+    width: 80%;
+}
+
+.big-sticker-wrapper {
+    display: flex;
+    column-gap: 45px;
+    justify-content: space-between;
+}
+
+/* Στυλ για το αυτοκόλλητο */
+.sticker {
+    position: relative;
+    display: table;
+    width: 10em;
+    height: 10em;
+    padding: 1em;
+    border-radius: 100%;
+    background: rgb(255, 215, 7);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Στυλ για το κείμενο στο αυτοκόλλητο */
+.sticker p {
+    text-decoration: none;
+    color: #000000;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+}
+
+/* Στυλ για το fold του αυτοκόλλητου */
+.sticker .fold {
+    content: "";
+    display: block;
+    width: 10em;
+    height: 10em;
+    position: absolute;
+    right: -6em;
+    top: -6em;
+    border-radius: 100%;
+    background: -webkit-linear-gradient(-135deg, transparent 11.3em, #feeba7 10em, #feeba7 10em, #feeba7 85%);
+    box-shadow: 0 0 1.0rem rgb(0, 0, 0);
+}
+
+/* Στυλ για το κίτρινο αυτοκόλλητο */
+.sticker.yellow {
+    background: rgb(255, 215, 7);
+    background: -webkit-linear-gradient(-135deg, transparent 2.82em, rgb(255, 215, 7) 0, rgb(255, 215, 7));
+}
+
+/* Αλλαγή χρώματος κειμένου κατά το hover στα links του header */
+header a:hover {
+    color: #ffffff;
+    /* Λευκό χρώμα κατά το hover */
+}
+
+/* Στυλ για το λογότυπο */
+.logo {
+    padding: 0px;
+    height: 20em;
+    width: 20em;
+}
+
+/* Στυλ για τις επιλογές λίστας */
+.list-choice {
+    width: 50%;
+    margin: 1em auto;
+    padding-top: 18%;
+    position: relative;
+    cursor: pointer;
+}
+
+.list-choice input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+}
+
+/* Στυλ για τον τίτλο της λίστας επιλογών */
+.list-choice-title {
+    width: 100%;
+    display: block;
+    background: transparent;
+    text-align: center;
+    padding: 0.55em 1em;
+    box-sizing: border-box;
+    color: #000000;
+    border-radius: 0.2em;
+}
+
+/* Στυλ για το hover του τίτλου της λίστας επιλογών */
+.list-choice:hover .list-choice-title {
+    border-radius: 0.2em 0.2em 0 0;
+    color: white;
+}
+
+.list-choice input[type="radio"]+span {
+    color: #000000;
+    background: transparent;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Στυλ για το hover του span μετά τον τίτλο της λίστας επιλογών */
+.list-choice:hover input[type="radio"]+span:hover {
+    color: white;
+    background: transparent;
+}
+
+/* Στυλ για τα αντικείμενα επιλογής λίστας */
+.list-choice-objects {
+    position: absolute;
+    top: 0;
+    padding-top: 85%;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 250ms ease;
+}
+
+/* Στυλ για το ανοίγμα των αντικειμένων επιλογής λίστας κατά το hover */
+.list-choice:hover .list-choice-objects {
+    max-height: 540px;
+}
+
+main {
+    background-image: url("../Photos/board-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 1%;
+    padding: 0.675em 1em 0.675em 1em;
+    background-color: #fff;
+    border: 15px solid #c0a77b;
+    border-radius: 0.25rem;
+    color: #000;
+    cursor: pointer;
+
+}
+
+footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 2fr;
+    grid-template-rows: minmax(200px, auto) minmax(60px, auto) minmax(60px, auto) minmax(20px, auto) minmax(40px, auto) minmax(30px, auto);
+    background-image: url("../Photos/laptop.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 140%;
+    color: #fafafa;
+    font-family: monospace;
+    font-size: 180%;
+}
+
+/* Μέγεθος εικόνας λογότυπου στο υποσέλιδο */
+footer .logo {
+    height: 200px;
+    width: 200px;
+}
+
+/* Στοίχιση Footer */
+.logoclass {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    display: flex;
+    align-items: center;
+}
+
+.app_download {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    align-items: center;
+}
+
+.app_download h4 {
+    width: 250px;
+}
+
+.socials {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    align-items: center;
+}
+
+.phone {
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.links {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.navlinks {
+    display: flex;
+    margin-left: 3%;
+}
+
+.navsocials {
+    display: flex;
+    margin-left: 3%;
+    column-gap: 20px;
+}
+
+.navapp {
+    display: flex;
+    margin-left: 3%;
+}
+
+.copyright {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+/* Χρώμα για επίσκεψη συνδέσμων */
+.footer_links:visited {
+    color: rgb(1, 255, 1);
+}
+
+/* Χρώμα για ενεργούς (πατημένους) συνδέσμους */
+.footer_links:active {
+    text-decoration: underline;
+}
+
+/* Στυλ για τις φωτογραφίες στο υποσέλιδο */
+.store_photos {
+    width: 300%;
+}
+
+/*play store photo1 margin-right*/
+.navphoto1 {
+    margin-right: 100px;
+}
+
+.app_photos {
+    width: 100%;
+}
+
+picture {
+    width: 30px;
+}
+
+/* Στυλ για τους συνδέσμους στο υποσέλιδο */
+.footer_links {
+    color: #fafafa;
+    margin-right: 25px;
+}
+
+/* Μορφοποίηση μικρών εικόνων */
+span .icon {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+    color: blue;
+}
+
+.pin {
+    --pin-color: #d02627;
+    --pin-dark: #9e0608;
+    --pin-light: #fc7e7d;
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -15px;
+    width: 60px;
+    height: 50px;
+    z-index: 1;
+}
+
+/* Δημιουργία σκιάς για εφέ φωτισμού */
+.shadow {
+    position: absolute;
+    top: 18px;
+    left: -8px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: radial-gradient(var(--paper-shadow), 20%, rgba(201, 191, 141, 0));
+}
+
+/* Μεταλλικό μέρος της πινέζας */
+.metal {
+    position: absolute;
+    width: 5px;
+    height: 20px;
+    background: linear-gradient(to right, #808080, 40%, #eae8e8, 50%, #808080);
+    border-radius: 0 0 30% 30%;
+    transform: rotate(50deg);
+    transform-origin: bottom left;
+    top: 15px;
+    border-bottom: 1px solid #808080;
+}
+
+/* Κύκλος στο κάτω μέρος της πινέζας */
+.bottom-circle {
+    position: absolute;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--pin-color);
+    background: radial-gradient(circle at bottom right,
+            var(--pin-light),
+            25%,
+            var(--pin-dark),
+            90%,
+            var(--pin-color));
+}
+
+/* Δημιουργία του barrel για την πινέζα */
+.bottom-circle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: 20px;
+    height: 30px;
+    transform: rotate(55deg);
+    transform-origin: 100% 100%;
+    border-radius: 0 0 40% 40%;
+    background: linear-gradient(to right,
+            var(--pin-dark),
+            30%,
+            var(--pin-color),
+            90%,
+            var(--pin-light));
+}
+
+/* Δημιουργία του επάνω κύκλου της πινέζας */
+.bottom-circle::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: -5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: radial-gradient(circle at right,
+            var(--pin-light),
+            30%,
+            var(--pin-color),
+            var(--pin-dark) 80%);
+}
+
+/* Στυλ για τα κείμενα των κατηγοριών */
+.categories-text {
+    padding-top: 8%;
+    font-family: 'VAG-HandWritten';
+    font-size: 25px;
+    font-weight: 599;
+}
+
+.subcategories-list {
+    list-style: none;
+    padding: 0;
+}
+
+.subcategories-list li {
+    margin-bottom: 5px;
+}
+
+.subcategories-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.paper {
+    margin-top: 10%;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    min-height: 200px;
+    height: auto;
+    padding-bottom: 10%;
+    box-shadow: 0 0 1.0rem rgb(0, 0, 0);
+}
+
+.paper0 {
+    --paper-dark: #2991b4;
+    --paper-color: #4ab6d9;
+    background: linear-gradient(135deg, var(--paper-dark), 30%, var(--paper-color));
+    /*transform: rotate(10deg);*/
+    /*transform-origin: top left;*/
+}
+
+.paper1 {
+    --paper-dark: #88aa2d;
+    --paper-color: #abcc51;
+    background: linear-gradient(135deg, var(--paper-dark), 30%, var(--paper-color));
+    /*transform: rotate(10deg);*/
+    /*transform-origin: top left;*/
+}
+
+.paper2 {
+    --paper-dark: #c69f3c;
+    --paper-color: #f9c847;
+    background: linear-gradient(135deg, var(--paper-dark), 30%, var(--paper-color));
+    /*transform: rotate(10deg);*/
+    /*transform-origin: top left;*/
+}
+
+.paper3 {
+    --paper-dark: #bf4c76;
+    --paper-color: #eb6092;
+    background: linear-gradient(135deg, var(--paper-dark), 30%, var(--paper-color));
+    /*transform: rotate(10deg);*/
+    /*transform-origin: top left;*/
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ευθυγράμμιση των sections */
+    align-items: center; /* Κεντράρισμα των papers */
+    margin: -10px;
+}
+
+#categoriesList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Ευθυγράμμιση των sections */
+    margin: -10px;
+    /* Αρνητικά περιθώρια για να αντισταθμίσουν τα θετικά περιθώρια στα sections */
+}
+
+.big_product {
+    width: 300px;
+}
+
+.big_product:nth-of-type(4n+1) {
+    transform: rotate(5deg) translateY(0);
+    transform-origin: 50% 0%;
+    transition: all 0.35s;
+}
+
+
+/* Στυλ για το δεύτερο προϊόν */
+
+.big_product:nth-of-type(4n+2) {
+    transform: rotate(-5deg) translateY(0);
+    transform-origin: 50% 0%;
+    transition: all 0.35s;
+}
+
+/* Στυλ για το τρίτο προϊόν */
+.big_product:nth-of-type(4n+3) {
+    transform: rotate(-3deg) translateY(0);
+    transform-origin: 50% 0%;
+    transition: all 0.35s;
+}
+
+/* Στυλ για το τέταρτο προϊόν */
+.big_product:nth-of-type(4n+4) {
+    transform: rotate(3deg) translateY(0);
+    transform-origin: 50% 0%;
+    transition: all 0.35s;
+}
+
+.product:hover {
+    /*transform: rotateX(5deg) translateY(0);*/
+    transform: rotate3d(0, 0, 1, 5deg);
+    transform-origin: 50% 0%;
+    /* Κέντρο περιστροφής στο πάνω μέρος */
+}
+
+/* Στυλ για τα προϊόντα */
+.product {
+    font-family: 'VAG-HandWritten';
+    font-weight: 500;
+    display: inline-block;
+    width: 300px;
+    margin-top: 1rem;
+    margin: 3.5%;
+    /*transition: transform 0.3s ease-in-out;*/
+    transition: all 0.5s ease;
+    /* Added ease timing function */
+    transform-origin: top center;
+}
+
+.product .polaroid:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    /*transition: all 0.35s;*/
+    transition: all 0.5s ease;
+    transform-origin: top center;
+}
+
+/* Στυλ για τα πλαίσια polaroid */
+.polaroid {
+    width: auto;
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 0 1.0rem rgb(0, 0, 0);
+}
+
+/* Στυλ για τις εικόνες εντός των πλαισίων polaroid */
+.polaroid>img {
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Στυλ για τα captions κάτω από τις εικόνες */
+.caption {
+    color: rgba(9, 19, 91, 0.815);
+    text-align: center;
+    line-height: 2em;
+    font-size: 80%;
+}
+
+.img-tape {
+    position: relative;
+}
+
+.img-tape:before {
+    background: rgba(255, 255, 235, 0.6);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    content: "";
+    display: block;
+    height: 30px;
+    position: absolute;
+    margin: auto;
+    width: 100px;
+
+    z-index: 2;
+    left: 50%;
+    margin-left: -50px;
+    top: -10px;
+}
+
+/* Στυλ για την κλάση που δημιουργεί το χάρτι με γραμμές */
+.paper-line {
+    position: relative;
+    width: 800px;
+    height: 1000px; /*thelo na vro enan tropo na allazei to megethos tou xariou analoga me to megethos toy keimenou*/
+    z-index: 1;
+    margin: 0 auto;
+    padding: 1%;
+    background: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 0 1.0rem rgb(0, 0, 0);
+}
+
+/* Στυλ για τις γραμμές που προστίθενται στο χάρτι */
+.paper-line:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    background: radial-gradient(#575450 6px, transparent 7px) repeat-y;
+    background-size: 30px 30px;
+    border-right: 3px solid #D44147;
+    box-sizing: border-box;
+}
+
+/* Στυλ για το περιεχόμενο του χάρτιου */
+.paper-content {
+    font-family: 'VAG-HandWritten';
+    font-size: 200%;
+    font-weight: 500;
+    position: absolute;
+    z-index: 0;
+    top: 30px;
+    right: 0;
+    bottom: 30px;
+    left: 60px;
+    background: linear-gradient(transparent, transparent 28px, #91D1D3 28px);
+    background-size: 30px 30px;
+}
+
+.features_style {
+    list-style: none;
+}
+
+.polaroid-wrapper {
+    display: flex;
+}
+
+
+/* Μορφοποίηση για τον σελιδοδείκτη */
+.selidodikths {
+    --paper-dark: rgb(251, 255, 21);
+    --paper-color: rgb(249, 255, 72);
+    position: relative;
+    display: flex;
+    flex: 2;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    justify-content: center;
+    text-align: center;
+    color: rgba(9, 19, 91, 0.815);
+    background: linear-gradient(135deg, var(--paper-dark), 30%, var(--paper-color));
+    transform-origin: top left;
+    box-shadow: 0 0 1.0rem rgb(0, 0, 0);
+    width: auto;
+    max-width: 400px;
+}
+
+.ads-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 200px;
+    row-gap: 40px;
+}
