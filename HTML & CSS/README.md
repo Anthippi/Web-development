@@ -1,9 +1,9 @@
-# 5 Στάδια Δημιουργίας Ιστότοπου Αγγελιών: HTML5, CSS, JavaScript & Responsive Design
+# 5 Στάδια Δημιουργίας Ιστότοπου Αγγελιών: HTML5, CSS, JavaScript & Responsive Design [![Static Badge](https://img.shields.io/badge/English-orange)](README.en.md)
 
 ---
 ### Ρόλος του `INDEX.html`
 Λειτουργεί ως **κεντρική σελίδα πλοήγησης** μεταξύ των ασκήσεων. Περιλαμβάνει συνδέσμους για τα αποτελέσματα κάθε σταδίου:  
-- Σύνδεσμοι προς τις σελίδες `INDEX.html` κάθε άσκησης (πχ. `Exercise1/index.html`).  
+- Σύνδεσμοι προς τις σελίδες `INDEX.html` κάθε άσκησης (πχ. `EXERCISE1/index.html`).  
 - Εμφανίζει μια συνοπτική επισκόπηση του έργου και οδηγίες χρήσης.  
 
 ---
