@@ -1,4 +1,4 @@
-# 5 Στάδια Δημιουργίας Ιστότοπου Αγγελιών: HTML5, CSS, JavaScript & Responsive Design [![Static Badge](https://img.shields.io/badge/English-orange)](README.en.md)
+# Στάδια Δημιουργίας Ιστότοπου Αγγελιών: HTML5, CSS, JavaScript & Responsive Design [![Static Badge](https://img.shields.io/badge/English-orange)](README.en.md)
 
 ---
 ### Ρόλος του `INDEX.html`
