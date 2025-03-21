@@ -21,4 +21,4 @@
 
 ### Τεχνολογίες
 - **Πελάτης:** HTML, CSS, JavaScript (Fetch API, Handlebars).
-- **Διακομιστής:** Node.js, Express, MongoDB (προαιρετικά).
+- **Διακομιστής:** Node.js, Express.
