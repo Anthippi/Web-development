@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="el">
+ 
+<head>
+    <title> Form </title>
+    <link rel="stylesheet" type="text/css" href="styling.css">
+    <link rel = "icon" href = "../Photos/logo.png" type = "image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+ 
+    <header class="menu">
+        <a href="index.html"> <img class="logo" src= "../Photos/logo.png" alt="logo"></a>
+        <nav class="big-wrapper">
+            <div class="big-sticker-wrapper">
+                <div class="sticker-wrapper">
+                    <aside class="sticker yellow">
+                                <p> <a href="index.html">Κεντρική Σελίδα</a> </p>
+                        <span class="fold"></span>
+                    </aside>
+                </div>
+                <div class="sticker-wrapper">
+                    <aside class="sticker yellow">
+                                <p> <a href="categories.html">Κατηγορίες</a> </p>
+                        <span class="fold"></span>
+                    </aside>
+                </div>
+                <div class="sticker-wrapper">
+                    <aside class="sticker yellow">
+                                <p> <a href="about-us.html">Ποιοι είμαστε</a> </p>
+                        <span class="fold"></span>
+                    </aside>
+                </div>
+                <div class="sticker-wrapper">
+                    <aside class="sticker yellow">
+                                <p> <a href="contact-us.html">Επικοινωνία</a> </p>
+                        <span class="fold"></span>
+                    </aside>
+                </div>
+                <div class="sticker-wrapper">
+                    <aside class="sticker yellow">
+                            <div class="list-choice">
+                                <div class="list-choice-title"><span class="material-symbols-outlined">language</span></div>
+                                    <div class="list-choice-objects">
+                                        <label> <input type="radio" name = "language"><span>Ελληνικά </span></label>
+                                        <label> <input type="radio" name = "language"><span>English</span></label>
+                                    </div>
+                            </div>
+                        <span class="fold"></span>
+                    </aside>
+                </div>
+                <div class="sticker-wrapper">
+                    <aside class="sticker yellow">
+                                <p> 
+                                    <a href="form.html"><span class="material-symbols-outlined">person</span></a>
+                                </p>
+                        <span class="fold"></span>
+                    </aside>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <aside class="paper_airplane">
+        <img src="../Photos/paper_airplane.png" alt="paper airplane">
+    </aside>
+ 
+    <main class="aboutus_grid">
+        <form class="form_flex">
+            <article class="paper-line-aboutus">
+                <div class="paper-content-aboutus">
+                    <div class="pin">
+                        <div class="shadow"></div>
+                        <div class="metal"></div>
+                        <div class="bottom-circle"></div>
+                    </div>
+                
+                
+                    <div class="paper-text-aboutus">
+                        <div class="paper_form1">
+ 
+                            <fieldset>
+                                <div class="paper_form2">
+                                    
+                                    <details>
+                                        <summary><h2>Προσωπικά Στοιχεία</h2></summary>
+                                        <p>Η συμπλήρωση μιας φόρμας προσωπικών στοιχείων λειτουργεί</p>
+                                        <p>ως γέφυρα επικοινωνίας μεταξύ της πλατφόρμας και του χρήστη</p>
+                                    </details>
+                                    
+                                    <div class="form_asset">
+                                        <label for="fname">Όνομα:</label>
+                                        <input type="text" id="fname" name="fname" placeholder="Συμπληρώστε το όνομά σας" maxlength="30" size="25" autocomplete="given-name" required>
+                                    </div>
+        
+                                    <div class="form_asset">
+                                        <label for="lname">Επώνυμο:</label>
+                                        <input type="text" id="lname" name="lname" placeholder="Συμπληρώστε το επώνυμο σας" maxlength="30" size="30" autocomplete="family-name" required>
+                                    </div>
+        
+                                    <div class="form_asset">
+                                        <label for="email">Email:</label>
+                                        <input type="email" id="email" name="email" placeholder="πχ ******@example.com" maxlength="320" size="32"  autocomplete="email" required>
+                                    </div>
+        
+                                    <div class="form_asset">
+                                        <label for="phone">Τηλέφωνο:</label>
+                                        <input type="tel" id="phone" name="phone" placeholder="Συμπληρώστε το τηλέφωνο σας"  size="30" pattern="[0-9]{10}" autocomplete="tel" required title="10 αριθμοί από το 0 έως το 9 ">
+                                    </div>
+        
+                                    <div class="form_asset">
+                                        <label for="address">Διεύθυνση Κατοικίας:</label>
+                                        <input type="text" id="address" name="address" placeholder="Συμπληρώστε τη διεύθυνση κατοικίας σας" maxlength="50" size="30" pattern="[a-zA-Z0-9α-ωΑ-Ω\s,]+" required title="Χρήση χαρακτήρων, αριθμών, σημείων στίξης">
+                                    </div>
+                                    <div class="form_asset">
+                                        <label for="birthday">Ημερομηνία Γέννησης:</label>
+                                        <input type="date" id="birthday" name="birthday" size="40" max="2023-11-21" autocomplete="bday" required>
+                                    </div>
+                                </div>
+                            </fieldset>    
+     
+     
+                            <fieldset>
+                                <div class="paper_form2">
+                                    <details>
+                                        <summary><h2>Στοιχεία Ταυτοποίησης</h2></summary>
+                                        <p>Η συμπλήρωση ενός ψευδώνυμου (username) και κωδικού πρόσβασης (password) αντιπροσωπεύει μια σημαντική διαδικασία για την ασφάλεια και την εξατομικευμένη πρόσβαση των χρηστών στην ιστοσελίδα.</p>
+                                    </details>
+        
+                                    <div class="form_asset">
+                                        <label for="fname">Username:</label>
+                                        <input type="text" id="username" name="username" placeholder="Συμπληρώστε το username σας" maxlength="50" size="30" autocomplete="username" required>
+                                    </div>
+                                
+                                    <div class="form_asset">
+                                        <label for="password1">Password:</label>
+                                        <input type="password" id="password1" name="password1" data-complexity="" placeholder="Συμπληρώστε το password σας" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" size="30" autocomplete="current-password" required title="Πρέπει να περιέχει τουλάχιστον έναν αριθμό, ένα Κεφαλαίο και ένα μικρό γράμμα, και τουλάχιστον 8 ή περισσότερους χαρακτήρες">
+                                    </div>
+        
+                                    <div class="form_asset">
+                                        <label for="password2">Password:</label>
+                                        <input type="password" id="password2" name="password2" data-complexity="" placeholder="Επαναλάβετε το password σας" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" size="30" autocomplete="current-password" required title="Πρέπει να ταυτίζεται με τον πάνω κωδικό">
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </article>
+     
+            <article class="paper-line-aboutus">
+                <div class="paper-content-aboutus">
+    
+                    <div class="pin">
+                        <div class="shadow"></div>
+                        <div class="metal"></div>
+                        <div class="bottom-circle"></div>
+                    </div>
+                    <div class="paper-text-aboutus">
+                        <div class="paper_form1">
+        
+                            <fieldset>
+                                <div class="paper_form2">
+                                    <h2>Επικοινωνία:</h2>
+                                    <label for="notificationMethod">Επιλέξτε τον τρόπο λήψης ειδοποιήσεων:</label>
+                                    <select id="notificationMethod" name="notificationMethod">
+                                      <option value="email">Email</option>
+                                      <option value="sms">SMS</option>
+                                      <option value="viber">Viber</option>
+                                      <option value="whatsapp">WhatsApp</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <div class="paper_form2">
+                                    
+                                    <details>
+                                        <summary><h2>Σύντομο Ερωτηματολoγιο:</h2></summary>
+                                        <p>Το ερωτηματολόγιο είναι ένα αποτελεσματικό εργαλείο για τη δημιουργία μιας πιο εξατομικευμένης, χρήσιμης και ικανοποιητικής εμπειρίας τόσο για τους χρήστες όσο και για τους διαφημιζόμενους.</p>
+                                    </details>
+                                    
+                                    <div>
+                                        <label for="interes">Τι τύπου αγγελίες σας ενδιαφέρουν συνήθως;</label>
+                                        <input list="interestingadds" name="interes" id="interes"  maxlength="5000" placeholder="πχ. Αυτοκίνητα,... " required>
+                                        <datalist id="interestingadds">
+                                            <option value="Ακίνητα">
+                                            <option value="Αυτοκίνητα">
+                                            <option value="Εργασία">
+                                            <option value="Οικιασκές Συσκευές">
+                                            <option value="Τεχνολογία">
+                                            <option value="Επιχειρήσεις">
+                                            <option value="Ελεύθερος Χρόνος">
+                                            <option value="Αθλητισμός">
+                                            <option value="Κατοικίδια & Αξεσουάρ">
+                                            <option value="Υγεία & Ομορφιά">
+                                            <option value="Προσωπικά & Κοινωνικά">
+                                            <option value="Μόδα & Ρουχισμός">
+                                        </datalist>
+                                    </div>
+        
+                                    <div>
+                                        <label for="job">Ποιά είναι η θέση εργασίας σας;</label>
+                                        <textarea id="job" rows="7" cols="60" name="job" maxlength="5000" required placeholder="πχ. Καθηγητής, Φοιτητής, Προγραμματιστής,..." style="height: 30px; width: 416px;"></textarea>
+                                    </div>
+        
+                                    <div>
+                                        <label for="area">Σε ποιές περιοχές θα θέλατε να κατοικήσετε ή να δραστηριοποιηθείτε επαγγελματικά;</label>
+                                        <input list="areas" name="area" id="area" maxlength="5000" required placeholder="πχ. Αθήνα,...">
+                                        <datalist id="areas">
+                                            <option value="Αθήνα">
+                                            <option value="Θεσσαλονίκη">
+                                            <option value="Ηράκλειο">
+                                            <option value="Πάτρα">
+                                            <option value="Βόλος">
+                                        </datalist>
+                                    </div>
+        
+                                    <div>
+                                        <label for="vehicle">Τι τύπο οχήματος χρησιμοποιείτε;</label>
+                                        <input list="vehicles" name="vehicle" id="vehicle" maxlength="5000" required placeholder="πχ. Opel,...">
+                                        <datalist id="vehicles">
+                                            <option value="Opel">
+                                            <option value="BMW">
+                                            <option value="Peugeot">
+                                            <option value="Toyota">
+                                            <option value="Mercedes">
+                                        </datalist>
+                                    </div>
+        
+                                    <div>
+                                        <label for="hobbies">Με τι ασχολείστε στον ελεύθερό σας χρόνο;</label>
+                                        <textarea id="hobbies" rows="7" cols="60" name="hobbies" maxlength="5000" required placeholder="πχ. Μουσική, Αθλητισμός, Gaming,..."  style="height: 30px; width: 416px;"></textarea>
+                                    </div>
+                                    
+                                </div>
+                            </fieldset>
+
+                            <div class="item-wrapper">
+                                <div class="item">
+                                    <div class="highlight"></div>
+                                    <input type="submit" class="btn" value="Υποβολή">
+                                </div>
+                                <div class="item">
+                                    <div class="highlight"></div>    
+                                    <input type="reset" class="btn" value="Επιστροφή">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+        </form>       
+ 
+    </main>
+ 
+    <aside class="paper_airplane2">
+        <img src="../Photos/paper_airplane2.png" alt="paper airplane">
+    </aside>
+
+    <footer>
+
+        <section class="logoclass">
+            <a href="index.html"> 
+                <img class="logo"  src="../Photos/logo.png" alt="logo">
+            </a>
+        </section>
+            
+    
+        <section class="app_download">
+    
+            <h4> Κατεβάστε την Εφαρμογή μας: </h4>
+    
+            <nav class="navapp">
+                <picture class="navphoto1">
+                    <source srcset="../Photos/play_store_mini.png" media="(max-width:700px)">
+                    <source srcset="../Photos/play_store.png">
+                    <img class ="store_photos" src="../Photos/play_store.png" alt="play store">
+                </picture> 
+                <br>
+                <picture>
+                    <source srcset="../Photos/app_store_mini.png" media="(max-width:700px)">
+                    <source srcset="../Photos/app_store.png">
+                    <img class ="store_photos" src="../Photos/app_store.png" alt="app store">
+                </picture> 
+            </nav>
+    
+        </section>
+    
+        <section class="socials">
+    
+            <h4> Socials: </h4>
+            
+            <nav class="navsocials">
+                <picture>
+                    <source srcset="../Photos/fb-logo-mini.png" media="(max-width:700px)">
+                    <source srcset="../Photos/fb-logo.png">
+                    <img class="app_photos" src="../Photos/fb-logo.png" alt="facebook icon">
+                </picture>
+    
+                <picture>
+                    <source srcset="../Photos/instagram-logo-mini.png" media="(max-width:700px)">
+                    <source srcset="../Photos/instagram-logo.png">
+                    <img class="app_photos" src="../Photos/instagram-logo.png" alt="instagram icon">
+                </picture>
+            </nav>
+    
+        </section>
+    
+        <section class="phone">
+    
+            <h4> Τηλέφωνο : 2017128938 </h4>
+    
+        </section>
+    
+        <section class="links">
+    
+            <h4> Χρήσιμοι Σύνδεσμοι: </h4>
+    
+            <nav class="navlinks">
+                <a class="footer_links" href="#">  Όροι χρήσης </a>
+                <br>
+                <a class="footer_links" href="#"> Cookies </a>
+            </nav>
+    
+        </section>
+    
+        <div class="copyright">
+            &copy; Copyright @2023 
+        </div>
+    </footer>
+    <script src="form.js"></script>
+</body>
+ 
+</html>
