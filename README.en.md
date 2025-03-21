@@ -8,7 +8,7 @@
   4. Responsive Design
   5. JavaScript, HTML Forms, and Validation
 
-## [Web API]() (Dynamic Ads Application with Web API, Node.js: User Authentication, Favorites, and Filtering)
+## [Web API & JS]() (Dynamic Ads Application with Web API, Node.js: User Authentication, Favorites, and Filtering)
 - Integration with the [WikiAds API](https://wiki-ads.onrender.com) for dynamic ad display.
 - Implementation of user authentication, favorites list, and filtering features. Each phase building on the previous one.
   1. Category Navigation
