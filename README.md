@@ -8,7 +8,7 @@
   4. Responsive design
   5. Javascript, HTML Forms and validation
      
-## [Web API](https://github.com/Anthippi/Web-development/tree/main/Web%20API) (Ανάπτυξη Δυναμικής Εφαρμογής Αγγελιών με Web API, Node.js: Ταυτοποίηση Χρήστη, Αγαπημένες και Φιλτράρισμα)
+## [Web API](https://github.com/Anthippi/Web-development/tree/main/Web%20API) (Δυναμική Εφαρμογή Αγγελιών με Web API, Node.js)
 - Επικοινωνία με το [WikiAds API](https://wiki-ads.onrender.com) για δυναμική εμφάνιση αγγελιών.
 - Υλοποίηση ταυτοποίησης χρήστη, λίστας αγαπημένων και φιλτραρίσματος.
   1. Πλοήγηση σε Κατηγορίες
