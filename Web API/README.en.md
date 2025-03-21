@@ -18,3 +18,6 @@
 
 4. **Bonus – Subcategory-Based Filtering**  
    - Filter ads by subcategory.
+### Technologies
+   - Client: HTML, CSS, JavaScript (Fetch API, Handlebars).
+   - Server: Node.js, Express.
