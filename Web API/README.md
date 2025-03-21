@@ -1,4 +1,4 @@
-# Ανάπτυξη Δυναμικής Εφαρμογής Αγγελιών με Web API, Node.js και MongoDB: Ταυτοποίηση Χρήστη, Αγαπημένες και Φιλτράρισμα [![Static Badge](https://img.shields.io/badge/English-orange)](README.en.md)
+# Ανάπτυξη Δυναμικής Εφαρμογής Αγγελιών με Web API, Node.js: Ταυτοποίηση Χρήστη, Αγαπημένες και Φιλτράρισμα [![Static Badge](https://img.shields.io/badge/English-orange)](README.en.md)
 
 ### Στόχοι
 - Επικοινωνία με το [WikiAds API](https://wiki-ads.onrender.com) για δυναμική εμφάνιση αγγελιών.
