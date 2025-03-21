@@ -1,5 +1,4 @@
-# Web Development
-
+# 5 Στάδια Δημιουργίας Ιστότοπου Αγγελιών: HTML5, CSS, JavaScript & Responsive Design
 
 ---
 ### Ρόλος του `INDEX.html`
