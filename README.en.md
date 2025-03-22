@@ -13,8 +13,8 @@
 - Implementation of user authentication, favorites list, and filtering features. Each phase building on the previous one.
   1. Category Navigation
   2. Add to Favorites
-  3. View Favorites
-  4. Subcategory-Based Ad Filtering (Bonus)
+  3. Subcategory-Based Ad Filtering (Bonus)
+  4. View Favorites
 
 ## Code Validation
 - **HTML:** [W3C Validator](https://validator.w3.org/)  
