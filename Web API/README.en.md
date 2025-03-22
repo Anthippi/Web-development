@@ -13,11 +13,13 @@
    - Authentication form with Fetch API.
    - Ad addition via service calls (Login Service, Add to Favorites).
 
-3. **UC3 – View Favorites**  
+3. **Bonus – Subcategory-Based Filtering**  
+   - Filter ads by subcategory.
+
+4. **UC3 – View Favorites**  
    - `favorite-ads.html` page with filtered favorite ads.
 
-4. **Bonus – Subcategory-Based Filtering**  
-   - Filter ads by subcategory.
+ 
 ### Technologies
    - Client: HTML, CSS, JavaScript (Fetch API, Handlebars).
    - Server: Node.js, Express.
