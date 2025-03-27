@@ -1,4 +1,4 @@
-# Web development [![Static Badge](https://img.shields.io/badge/English-orange)](README.en.md)
+# Web Development [![Static Badge](https://img.shields.io/badge/English-orange)](README.en.md)
 
 ## [HTML & CSS](https://github.com/Anthippi/Web-development/tree/main/HTML%20%26%20CSS) (Στατικός Ιστότοπος Αγγελιών (HTML5, CSS, JavaScript)
 - Aνάπτυξη ενός στατικού ιστότοπου για μια υπηρεσία αναζήτησης αγγελιών με χρήση **HTML5, CSS, και JavaScript**. Ο ιστότοπος περιλαμβάνει 7+ σελίδες, φόρμες επικοινωνίας, responsive design, και επικύρωση δεδομένων. Η ανάπτυξη πραγματοποιείται σε **5 στάδια**, με κάθε στάδιο να επεκτείνει το προηγούμενο.
