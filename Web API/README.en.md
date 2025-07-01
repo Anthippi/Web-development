@@ -7,18 +7,18 @@
 
 ### Functionality
 
-1. **UX1 – Navigate by Category**  
+1. **PX1 – Navigate by Category**  
    - Dynamically load ads using Fetch API and Handlebars templates.  
    - Pages: `index.html`, `category.html`, `subcategory.html`
 
-2. **UX2 – Add to Favorites**  
+2. **PX2 – Add to Favorites**  
    - User authentication form using Fetch API.  
    - Add ads to favorites through API calls (Login Service, Add to Favorites).
 
 3. **Bonus – Filtering**  
    - Filter ads based on subcategories.
 
-4. **UX3 – View Favorites**  
+4. **PX3 – View Favorites**  
    - Page `favorite-ads.html` displaying the user's filtered favorite ads.
 
 ---
