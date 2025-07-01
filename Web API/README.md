@@ -1,3 +1,4 @@
+
 # Ανάπτυξη Δυναμικής Εφαρμογής Αγγελιών με Web API, Node.js: Ταυτοποίηση Χρήστη, Αγαπημένες και Φιλτράρισμα [![Static Badge](https://img.shields.io/badge/English-orange)](README.en.md)
 
 ### Στόχοι
@@ -5,48 +6,86 @@
 - Υλοποίηση ταυτοποίησης χρήστη, λίστας αγαπημένων και φιλτραρίσματος.
 
 ### Λειτουργικότητα
+
 1. **ΠΧ1 – Πλοήγηση σε Κατηγορίες**  
-   - Δυναμική φόρτωση αγγελιών με Fetch API και Handlebars templates.
+   - Δυναμική φόρτωση αγγελιών με Fetch API και Handlebars templates.  
    - Σελίδες: `index.html`, `category.html`, `subcategory.html`.
 
 2. **ΠΧ2 – Προσθήκη Αγαπημένων**  
-   - Φόρμα ταυτοποίησης με Fetch API.
+   - Φόρμα ταυτοποίησης με Fetch API.  
    - Προσθήκη αγγελιών με κλήση υπηρεσιών (Login Service, Add to Favorites).
-  
+
 3. **Bonus – Φιλτράρισμα**  
    - Φιλτράρισμα αγγελιών βάσει υποκατηγοριών.
 
 4. **ΠΧ3 – Προβολή Αγαπημένων**  
    - Σελίδα `favorite-ads.html` με φιλτραρισμένες αγγελίες.
 
+---
 
 ### Τεχνολογίες
-- **Πελάτης:** HTML, CSS, JavaScript (Fetch API, Handlebars).
-- **Διακομιστής:** Node.js, Express.
+
+- **Πελάτης:** HTML, CSS, JavaScript (Fetch API, Handlebars)  
+- **Διακομιστής:** Node.js, Express
 
 ---
-Οι απαραίτητες εξαρτήσεις υπάρχουν ήδη στο package.json. 
-Μπορείτε να τις εγκαταστήσετε με χρήση της εντολής
-```
+
+## Οδηγίες Εκτέλεσης
+
+### 1. Εγκατάσταση Εξαρτήσεων
+
+Εκτελέστε την εντολή:
+
+```bash
 npm install
 ```
 
-Για να δοκιμάσετε την εφαρμογή σας μπορείτε να την ξεκινήσετε με την εντολή
-```
+---
+
+### 2. Εκκίνηση του server για το κύριο backend (`index.js`)
+
+```bash
 node index.js
 ```
 
-Βέβαια, μετά από κάθε αλλαγή στον κώδικα του server θα πρέπει να κάνετε επανεκκίνηση της εφαρμογής. Για διευκόλυνσή σας μπορείτε να ξεκινήσετε την εφαρμογή με τη βοήθεια του εργαλείου nodemon ως εξής:
+ή με αυτόματη επανεκκίνηση κατά τις αλλαγές:
 
-```
+```bash
 nodemon index.js
 ```
 
-Κάθε φορά που αλλάζετε τον κώδικα του server, το nodemon επανεκκινεί αυτόματα τον server.
+---
 
-## Χρήσιμες βιβλιοθήκες
+### 3. Εκκίνηση του server ταυτοποίησης και αγαπημένων (`server.js`) (Για την ΠΧ3)
 
-- [Handlebars](https://handlebarsjs.com/guide/): γλώσσα για τη σύνταξη υποδειγμάτων (templates) για δυναμική παραγωγή HTML περιεχομένου,
-- [expressjs](https://expressjs.com/en/guide/routing.html): γρήγορη υλοποίηση υπηρεσιών ιστού,
-- [uuid](https://www.npmjs.com/package/uuid): παραγωγή μοναδικών αναγνωριστικών,
-- [nodemon](https://www.npmjs.com/package/nodemon): εργαλείο για αυτόματη επανεκκίνηση μιας Node.js εφαρμογής, σε περίπτωση αλλαγών στα αρχεία της εφαρμογής.
+Για να μπορεί ο χρήστης να κάνει login και να προσθέτει αγαπημένα:
+
+```bash
+node server.js
+```
+
+ή με nodemon:
+
+```bash
+nodemon server.js
+```
+
+Ο `server.js` τρέχει στην πόρτα `3000` και περιλαμβάνει τα εξής endpoints:
+
+- `POST /login` – Ταυτοποίηση χρήστη και επιστροφή `sessionId`
+- `POST /likeAd` – Προσθήκη αγγελίας στα αγαπημένα
+- `POST /getFavoriteAds` – Λήψη των αγαπημένων αγγελιών χρήστη
+- `PUT /onRefresh` – Εκκαθάριση λίστας αγαπημένων (κατά την ανανέωση)
+
+> Για πλήρη λειτουργικότητα της εφαρμογής απαιτείται να εκτελούνται **και** τα `index.js` **και** `server.js` ταυτόχρονα.
+
+---
+
+## Χρήσιμες Βιβλιοθήκες
+
+- [Handlebars](https://handlebarsjs.com/guide/): Template engine για δυναμικό HTML
+- [express](https://expressjs.com/en/guide/routing.html): Web framework για Node.js
+- [uuid](https://www.npmjs.com/package/uuid): Δημιουργία μοναδικών `sessionId`
+- [nodemon](https://www.npmjs.com/package/nodemon): Παρακολούθηση και αυτόματη επανεκκίνηση του server
+
+---
