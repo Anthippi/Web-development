@@ -7,18 +7,18 @@
 
 ### Λειτουργικότητα
 
-1. **ΠΧ1 – Πλοήγηση σε Κατηγορίες**  
+1. **[ΠΧ1 – Πλοήγηση σε Κατηγορίες](https://github.com/Anthippi/Web-development/tree/main/Web%20API/PX1)**  
    - Δυναμική φόρτωση αγγελιών με Fetch API και Handlebars templates.  
    - Σελίδες: `index.html`, `category.html`, `subcategory.html`.
 
-2. **ΠΧ2 – Προσθήκη Αγαπημένων**  
+2. **[ΠΧ2 – Προσθήκη Αγαπημένων](https://github.com/Anthippi/Web-development/tree/main/Web%20API/PX2)**  
    - Φόρμα ταυτοποίησης με Fetch API.  
    - Προσθήκη αγγελιών με κλήση υπηρεσιών (Login Service, Add to Favorites).
 
-3. **Bonus – Φιλτράρισμα**  
+3. **[Bonus – Φιλτράρισμα](https://github.com/Anthippi/Web-development/tree/main/Web%20API/Bonus)**  
    - Φιλτράρισμα αγγελιών βάσει υποκατηγοριών.
 
-4. **ΠΧ3 – Προβολή Αγαπημένων**  
+4. **[ΠΧ3 – Προβολή Αγαπημένων](https://github.com/Anthippi/Web-development/tree/main/Web%20API/PX3)**  
    - Σελίδα `favorite-ads.html` με φιλτραρισμένες αγγελίες.
 
 ---
