@@ -7,18 +7,18 @@
 
 ### Functionality
 
-1. **PX1 – Navigate by Category**  
+1. **[PX1 – Navigate by Category](https://github.com/Anthippi/Web-development/tree/main/Web%20API/PX1)**  
    - Dynamically load ads using Fetch API and Handlebars templates.  
    - Pages: `index.html`, `category.html`, `subcategory.html`
 
-2. **PX2 – Add to Favorites**  
+2. **[PX2 – Add to Favorites](https://github.com/Anthippi/Web-development/tree/main/Web%20API/PX2)**  
    - User authentication form using Fetch API.  
    - Add ads to favorites through API calls (Login Service, Add to Favorites).
 
-3. **Bonus – Filtering**  
+3. **[Bonus – Filtering](https://github.com/Anthippi/Web-development/tree/main/Web%20API/Bonus)**  
    - Filter ads based on subcategories.
 
-4. **PX3 – View Favorites**  
+4. **[PX3 – View Favorites](https://github.com/Anthippi/Web-development/tree/main/Web%20API/PX3)**  
    - Page `favorite-ads.html` displaying the user's filtered favorite ads.
 
 ---
